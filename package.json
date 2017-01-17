@@ -1,5 +1,5 @@
 {
-  "name": "utility_tool",
+  "name": "am_utility_tool",
   "version": "1.0.0",
   "description": "A Utility Tool",
   "main": "src/debug.js",
