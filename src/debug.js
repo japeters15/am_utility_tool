@@ -20,6 +20,7 @@ function _bump(currentSemVersion, typeofIncrement){
     aryVersions[versionIndex] = parseInt(aryVersions[versionIndex]);
   }
 
+/* Increment Types Function */
   if(typesofIncrement === 'patch'){
     aryVersions[2] += 1; //patch
   } else if(typesofIncrement === 'minor'){
@@ -42,12 +43,14 @@ function debugSuccess(message) {
   }
 }
 
+/* Debug Error */
 function debugError(message) {
   if (process.env.DEBUG) {
     console.error(colors.red(message));
   }
 }
 
+/* Debug Warn */
 function debugWarn(message) {
   if (process.env.DEBUG) {
     console.warn(colors.yellow(message));
